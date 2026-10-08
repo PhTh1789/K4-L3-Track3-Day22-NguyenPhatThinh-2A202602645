@@ -154,16 +154,16 @@ _Thành phần reward nào tăng trước (đúng định dạng hay đúng đá
 ## Danh sách bonus
 
 - [ ] NB3b — biến thể loss (+8)
-- [ ] NB5 — GGUF SFT+DPO (+4)
+- [x] NB5 — GGUF SFT+DPO (+4)
 - [ ] NB6 — benchmark (+6)
 - [ ] NB7 — GRPO (+8)
-- [ ] β-sweep (+6)
+- [x] β-sweep (+6)
 - [ ] Chấm chéo bằng hai họ mô hình (+4)
-- [ ] Đẩy lên HF Hub + thẻ mô tả mô hình (+3)
+- [x] Đẩy lên HF Hub + thẻ mô tả mô hình (+3)
 - [ ] `BONUS-CHALLENGE.md` (không chấm điểm)
 
 ---
 
 ## Điều bất ngờ nhất
-
-_(Tuỳ chọn, 1–3 câu)_
+ 
+Điều bất ngờ và thú vị nhất trong bài thực hành là sự ổn định vượt bậc của DPO khi sử dụng checkpoint SFT đã merge làm reference model: không hề xảy ra hiện tượng Likelihood Displacement hay suy giảm chất lượng câu trả lời. Hơn nữa, trên các câu hỏi cần sự súc tích, mô hình sau DPO có xu hướng trả lời cô đọng và đi thẳng vào trọng tâm hơn mô hình SFT ban đầu thay vì rơi vào bẫy "hack độ dài".

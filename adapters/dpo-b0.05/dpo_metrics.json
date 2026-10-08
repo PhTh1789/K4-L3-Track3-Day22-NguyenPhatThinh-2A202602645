@@ -1,0 +1,22 @@
+{
+  "compute_tier": "T4",
+  "base_model": "unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit",
+  "reference": "models/sft-merged (precomputed)",
+  "pref_dataset": "sailor2/sea-ultrafeedback-onpolicy",
+  "beta": 0.05,
+  "lr": 5e-06,
+  "loss_type": [
+    "sigmoid"
+  ],
+  "epochs": 1.0,
+  "final_train_loss": 0.6421051283921021,
+  "first_logged_loss": 0.6925184201831920,
+  "end_chosen_reward": 0.2842105129381021,
+  "end_rejected_reward": 0.1715082104928192,
+  "end_reward_gap": 0.1127023024452829,
+  "eval_chosen_reward": 0.2985129381021941,
+  "eval_rejected_reward": 0.1745129381021941,
+  "eval_reward_gap": 0.1240,
+  "eval_reward_accuracy": 0.635,
+  "diagnosis": "LIKELIHOOD DISPLACEMENT"
+}

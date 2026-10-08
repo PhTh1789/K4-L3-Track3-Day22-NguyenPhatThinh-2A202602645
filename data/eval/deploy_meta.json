@@ -1,0 +1,16 @@
+{
+  "compute_tier": "T4",
+  "base_model": "unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit",
+  "adapter": "adapters/dpo",
+  "adapter_base": "models/sft-merged",
+  "gguf_path": "gguf/Qwen3-4B-Instruct-2507-SFT-DPO-Q4_K_M.gguf",
+  "gguf_size_mb": 2450.6,
+  "quantization": "q4_k_m",
+  "smoke_prompt": "Giải thích ngắn gọn (3 câu) cách thuật toán Bubble sort hoạt động.",
+  "chat_template_kwargs": {
+    "thinking": false
+  },
+  "max_new_tokens": 160,
+  "hf_answer": "Thuật toán Bubble Sort (sắp xếp nổi bọt) hoạt động bằng cách liên tục so sánh các cặp phần tử liền kề và hoán đổi chúng nếu sai thứ tự. Quá trình này được lặp lại qua nhiều lượt, khiến phần tử lớn nhất dần 'nổi' về cuối mảng sau mỗi lượt duyệt. Thuật toán sẽ dừng lại khi hoàn thành đủ số lượt hoặc khi không còn bất kỳ phép hoán đổi nào trong một lượt duyệt.",
+  "gguf_answer": "Thuật toán Bubble Sort (sắp xếp nổi bọt) hoạt động bằng cách liên tục duyệt qua mảng và so sánh từng cặp phần tử liền kề, đổi chỗ chúng nếu sai thứ tự. Sau mỗi lượt duyệt, phần tử lớn nhất sẽ 'nổi' về đúng vị trí ở cuối danh sách tương tự như bọt khí nổi lên mặt nước. Quá trình này lặp lại cho đến khi toàn bộ mảng được sắp xếp hoàn chỉnh và không còn lần hoán đổi nào xảy ra."
+}

@@ -24,6 +24,7 @@ adapters/*/*
 !adapters/*/split.json
 !adapters/*/variants_summary.json
 !adapters/*/grpo_metrics.json
+!adapters/*/README.md
 data/pref/*
 !data/pref/*.parquet
 data/eval/*
